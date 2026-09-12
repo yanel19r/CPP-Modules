@@ -68,6 +68,6 @@ vcpkg_installed/
 Testing/
 .cache/
 
-# subjects
+# subject
 en.subject.pdf
 es.subject.pdf
