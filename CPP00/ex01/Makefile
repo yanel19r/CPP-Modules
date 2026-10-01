@@ -10,6 +10,7 @@ COMPILER     := c++
 RM           := rm -rf
 
 HEADER_DIR   := include
+HEADERS		 := $(wildcard $(HEADER_DIR)/*.hpp)
 CFLAGS       := -Wall -Wextra -Werror -std=c++98 -I$(HEADER_DIR)
 
 SRC_FILES    := $(wildcard *.cpp)
@@ -22,7 +23,7 @@ $(NAME): $(OBJ_FILES)
 	@$(COMPILER) $(CFLAGS) $(OBJ_FILES) -o $(NAME)
 	@echo "$(BOLD_GREEN)Executable '$(NAME)' created!$(RESET)"
 
-%.o: %.cpp
+%.o: %.cpp $(HEADERS)
 	@echo "$(BOLD_YELLOW)Compiling: $<...$(RESET)"
 	@$(COMPILER) $(CFLAGS) -c $< -o $@
 
