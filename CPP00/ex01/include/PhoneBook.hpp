@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 00:52:55 by yaperalt          #+#    #+#             */
-/*   Updated: 2026/10/01 17:19:06 by yaperalt         ###   ########.fr       */
+/*   Updated: 2026/10/02 01:51:20 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 #include "Contact.hpp"
 #include <iostream>
+#include <iomanip>
+#include <sstream>
 
 class PhoneBook {
 private:
