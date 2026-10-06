@@ -5,7 +5,7 @@ BOLD_YELLOW  := \033[1;33m
 BOLD_MAGENTA := \033[1;35m
 RESET        := \033[0m
 
-NAME         := horde
+NAME         := weapon
 COMPILER     := c++
 RM           := rm -rf
 

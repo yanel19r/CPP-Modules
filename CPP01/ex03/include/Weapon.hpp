@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/04 14:18:00 by yaperalt          #+#    #+#             */
-/*   Updated: 2026/10/04 14:39:05 by yaperalt         ###   ########.fr       */
+/*   Updated: 2026/10/06 04:18:43 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,10 @@ class Weapon {
 private:
     std::string type;       
 public:
-    Weapon();
+    Weapon(std::string type);
     ~Weapon();
-    const std::string& getType();
+    const std::string& getType(void);
     void setType(std::string type);
-
 };
 
 #endif
