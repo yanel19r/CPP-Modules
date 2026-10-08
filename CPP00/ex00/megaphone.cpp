@@ -6,7 +6,7 @@
 /*   By: yaperalt <yaperalt@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 02:40:22 by yz                #+#    #+#             */
-/*   Updated: 2026/09/19 15:00:41 by yaperalt         ###   ########.fr       */
+/*   Updated: 2026/10/09 01:16:18 by yaperalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,6 @@ int main(int argc, char *argv[])
         for (size_t j = 0; j < std::strlen(argv[i]); j++)
         {
             std::cout << (char)toupper(argv[i][j]);
-        }
-        if (i > 1)
-        {
-            std::cout << ' ';
         }
     }
     std::cout << '\n';
